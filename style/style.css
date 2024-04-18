@@ -7,7 +7,8 @@ nav img{
  
 .navbar a{
      color: rgba(248, 190, 31, 0.959);
-    
+    font-size: 25px;
+    flex: center;
  }
 
 body {
