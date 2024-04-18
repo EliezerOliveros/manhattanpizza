@@ -1,0 +1,15 @@
+
+nav img{
+    padding: 10px;
+     width: 90px;
+     border-radius: 50%;
+ }
+ 
+.navbar a{
+     color: rgba(248, 190, 31, 0.959);
+    
+ }
+
+body {
+    font-family: "Yellowtail", cursive;
+}
