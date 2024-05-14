@@ -1,0 +1,27 @@
+/* nav bar */
+nav {
+   color: black;
+}
+nav img{
+  
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.navbar a{
+    color: rgb(0, 0, 0);
+   font-size: 25px;
+   flex: center;
+   font-family: "Yellowtail", cursive;
+}
+
+.nav-link:hover {
+   background-color: black;
+   color: rgba(228, 0, 0, 0.884);
+}
+
+body {
+   font-family: "Yellowtail", cursive;
+   
+}

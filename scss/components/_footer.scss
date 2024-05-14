@@ -1,0 +1,79 @@
+/* foother */
+.footer-pag{
+    width: 100%;
+    background-color: rgb(53, 53, 53);
+    align-self: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-pag .group-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.footer-pag .group-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-pag .group-1 .box figure img{
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.footer-pag .group-1 .box h2{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.footer-pag .group-1 .box p{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-pag .group-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: rgb(34, 34, 36);
+    text-align: center;
+    transition: all 300ms ease;
+}
+.footer-pag .group-1 .red-social a:hover{
+    color: red;
+}
+
+.footer-pag .group-2{
+    background-color: rgb(43, 43, 43);
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.footer-pag .group-2 small{
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (max-width:800px){
+    .footer-pag .group-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
