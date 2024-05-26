@@ -1,140 +1,118 @@
 /*banner*/
 .banner2 {
 	background-image: linear-gradient(100deg, #000000, #00000020),
-		url('../imagenes/imgbannermenu.jpg');
-	height: 60rem;
+		url("../img/imgbannermenu.jpg");
+	height: 40rem;
 	background-size: cover;
-	background-position: center;
-}
 
-.content-banner {
-	max-width: 90rem;
-	margin: 0 auto;
-	padding: 25rem 0;
-}
+		div {
+		max-width: 90rem;
+		margin: 0 auto;
+		padding: 25rem 0;
+			p {
+			color: $main-color;
+			font-size: 2rem;
+			margin-bottom: 1rem;
+			font-weight: 500;
+            margin-top: -350px;
+			}
+			h2 {
+				color: $light-color;
+				font-size: 8rem;
+				font-weight: 500;
+				line-height: 1.2;
+    			text-shadow: 1px 1px $secondari-color;
+				
+				@include tablet{
+					font-size: 6rem;
+				}
 
-.content-banner p {
-	color: #da7e3a;
-	font-size: 2rem;
-	margin-bottom: 1rem;
-	font-weight: 500;
-}
+				@include mobile{
+					font-size: 3rem;
+				}
 
-.content-banner h2 {
-	color: #fff;
-	font-size: 8rem;
-	font-weight: 500;
-	line-height: 1.2;
-    text-shadow: 1px 1px #cc3300
-}
+			}
 
-.content-banner a {
-	margin-top: 2rem;
-	text-decoration: none;
-	color: #fff;
-	background-color: #da7e3a;
-	display: inline-block;
-	padding: 1rem 3rem;
-	text-transform: uppercase;
-	border-radius: 3rem;
-}
-
+			a{
+				margin-top: 2rem;
+				text-decoration: none;
+				color: $light-color;
+				background-color: $main-color;
+				display: inline-block;
+				padding: 1rem 3rem;
+				text-transform: uppercase;
+				border-radius: 3rem;
+				
+				&:hover {
+					background: linear-gradient(to right, $light-color,$main-color);
+					color: transparent;
+					background-clip: text;
+					
+			}
+		}
+	}
+}	
 /*Menu*/
 
 .menu{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     padding: 20px;
     font-size: 40px;
-}
-
-.menu h2{
-    font-size: 60px;
+         h2{
+            font-size: 60px;  
+        }
+        p{
+            text-align: center;
+        }
 }
 
 
 .product-card {
     border-radius: 15px;
-    background-color: #da7e3a;
+    background-color: #da7d3ad5;
     transition: 0.5s;
     overflow-x: hidden;
-  }
-  
-.product-card img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    transition: 0.5s;
-    border-radius: 30px;
-  }
-  
-.product-body {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    transition: 0.5s;
-  }
-  
-.btn-pink {
-    border: 1px solid #000;
-    border-radius: 20px;
-    font-size: 30px;
-}
-  
-.btn-pink:hover {
-    background-color: #000;
-    color: #cc3300;
-}
-  
-  
-.product-card:hover {
-    background-color: #cc3300;
-    box-shadow: 5px 5px 5px rgba(40, 189, 3, 0.788);
-    border: 1px solid #000;
-}
-  
-.product-card:hover img {
-    width: 700px;
-}
-
-.card-title {
-    font-size: 45px;
-}
-
-.card-text {
-    padding: 15px;
-    font-size: 20px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-}
-
-
-
-
-@media (max-width: 768px) {
-    .content-banner {
-		max-width: 50rem;
-		margin: 0 auto;
-		padding: 25rem 0;
-	}
-    .content-banner h2 {
-        font-size: 6rem;
-        color: #fff;
-        text-shadow: 1px 1px #cc3300
+        &:hover{
+            background-color: #aa3b16be;
+            box-shadow: 5px 5px 5px rgba(25, 126, 0, 0.788);
+            border: 1px solid #ffffff;
         }
-}
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: 0.5s;
+            border-radius: 30px;
+                &:hover{
+                    width: 700px;
+                }
+            }
+            .product-body {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+                transition: 0.5s;
 
-@media (max-width: 468px){
-    .content-banner {
-		max-width: 50rem;
-		padding: 22rem 0;
-	}
-    .content-banner h2 {
-        font-size: 2rem;
-        color: #fff;
-        text-shadow: 1px 1px #cc3300
-        }
+                    h3{
+                        font-size: 45px;
+                    }
+                    p{
+                        padding: 15px;
+                        font-size: 20px;
+                        font-style: normal;
+                    }
+                    a {
+                        border: 1px solid #000;
+                        border-radius: 20px;
+                        font-size: 30px;
 
+                        &:hover{
+                            background-color: $main-color;
+                            color:$light-color;
+                        }
+                    }                 
+            }
 }
