@@ -132,7 +132,7 @@ body {
 }
 .banner2 div h2 {
   color: white;
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 500;
   line-height: 1.2;
   text-shadow: 1px 1px #cc3300;
@@ -207,9 +207,8 @@ body {
 }
 .top-products .container-options span {
   color: #da7e3a;
-  background-color: white;
   padding: 0.7rem 3rem;
-  font-size: 30px;
+  font-size: 35px;
   text-transform: capitalize;
   border-radius: 2rem;
 }
@@ -297,8 +296,8 @@ body {
   margin-left: 0.5rem;
 }
 .container-products article .button-group {
-  position: absolute;
-  margin-top: -12rem;
+  display: flex;
+  margin-top: -25px;
   color: #000;
 }
 .container-products article .button-group span {
@@ -312,28 +311,33 @@ body {
 }
 
 /*carousel*/
-.carousel {
-  width: 90%;
-  margin-left: 3rem;
-  display: flex;
-  justify-content: center;
-}
 .carousel .carousel-inner p {
   font-size: 25px;
 }
-.carousel .carousel-inner h5 {
+.carousel .carousel-inner p h5 {
   font-size: 35px;
 }
-.carousel .carousel-item {
+.carousel .carousel-inner .carousel-item {
   width: 100%;
   height: 500px;
 }
-.carousel .carousel-item img {
+.carousel .carousel-inner .carousel-item img {
   width: 100%;
   height: 450px;
   object-fit: cover;
 }
 
+@media (max-width: 750px) {
+  .top-products .container-options span {
+    font-size: 25px;
+    padding: 1rem 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .top-products .container-options span {
+    display: none;
+  }
+}
 /*banner*/
 .banner2 {
   background-image: linear-gradient(100deg, #000000, rgba(0, 0, 0, 0.1254901961)), url("../img/imgbannermenu.jpg");
